@@ -1,0 +1,287 @@
+/* this is top new */
+.navbar-brand {
+    font-family: var(--primary-font);
+    /* color: var(--primary-color); */
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: slide-down .5s ease    ;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+@keyframes slide-down {
+    from{
+        top: -200px;
+    }
+    to{
+        top:0;
+    }
+}
+
+.navbar-brand span {
+    /* font-weight: bold; */
+    font-size: 32px;
+    color: #000;
+}
+
+/* .navbar-brand .navtext{
+  font-size: 40px;
+} */
+
+.custom_nav-container {
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.custom_nav-container .navbar-nav {
+    margin-left: auto;
+}
+.navbar-expand-lg .navbar-collapse{
+    /* justify-content: center; */
+}
+.custom_nav-container .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    /* font-weight: 500; */
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto 5px;
+
+}
+
+/* .custom_nav-container .navbar-nav .nav-item .nav-link .active{
+  
+} */
+
+.custom_nav-container .navbar-nav .nav-item .nav-link svg {
+    width: 17px;
+    height: auto;
+    fill: #000000;
+    margin-bottom: 2px;
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #fff;
+    /* font-weight: 600; */
+    background-color: var(--primary-color);
+
+}
+
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link svg,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
+    fill: var(--primary-color);
+}
+
+.custom_nav-container .nav_search-btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    color: #000000;
+}
+
+.custom_nav-container .nav_search-btn:hover {
+    color: var(--primary-color);
+}
+
+.custom_nav-container .navbar-toggler {
+    outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+    padding: 0;
+    width: 37px;
+    height: 42px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    outline: none;
+}
+
+.custom_nav-container .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.custom_nav-container .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2.4px;
+    background-color: var(--primary-color);
+    margin: 3px 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    top: -10px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+
+.custom_nav-container .navbar-toggler span::after {
+    top: 10px;
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.btx{
+    border: none;
+background-color: var(--primary-color);
+padding: 10px 30px;
+width: fit-content;
+margin: auto;
+color: white;
+/* border-radius: 10px; */
+transition: all ease .5s;
+text-decoration: none;
+/* vertical-align: middle; */
+/* margin: 10px 0px; */
+border-radius: 50px;
+/* font-weight: 600; */
+font-size: 22px;
+
+
+}
+
+.bgWhite {
+    background-color: var(--primary-color);
+    background-color: #fff;
+    transition: all ease 1s;
+}
+
+.bgWhite .custom_nav-container .navbar-nav .nav-item .nav-link {
+    /* padding: 20px; */
+    color: #000;
+}
+
+.bgWhite .custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.bgWhite .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: #fff;
+    /* font-weight: 600; */
+    background-color: var(--primary-color);
+
+}
+
+.bgWhite .btx{
+    /* background-color: #fff; */
+    /* color: var(--primary-color); */
+}
+
+
+/* .bgWhite .container .navbar .navbar-brand .logo-div {
+
+    background-image: url('../images/logo.webp') !important;
+
+} */
+
+.bgWhite .custom_nav-container .navbar-toggler span {
+    background-color: #000;
+}
+
+.bgWhite .custom_nav-container .navbar-toggler span::before,
+.bgWhite .custom_nav-container .navbar-toggler span::after {
+
+    background-color: #000;
+
+}
+
+/* top mini nav */
+.top-mini-nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.top-mini-nav .ot-links {
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+
+}
+
+ .social-links {
+    padding: 5px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ .social-links a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .5s;
+}
+
+ .social-links a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media (max-width:600px){
+    .top-mini-nav .ot-links{
+        padding: 1px;
+        font-size: 13px;
+    }
+}
